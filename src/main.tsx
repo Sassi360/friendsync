@@ -1,10 +1,23 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import "./global.css"
-import { Home } from './pages/Home'
+import { FC, ReactNode, StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { BrowserRouter } from 'react-router-dom';
+import "./global.css";
+import { RoutesCollection } from './routes';
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <Home />
-  </React.StrictMode>,
-)
+type RootProps = {
+  children: ReactNode;
+};
+
+const Root: FC<RootProps> = ({ children }) => {
+  return <StrictMode>{children}</StrictMode>;
+};
+
+const root = createRoot(document.getElementById("root")!);
+
+root.render(
+  <Root>
+    <BrowserRouter>
+      <RoutesCollection />
+    </BrowserRouter>
+  </Root>,
+);
