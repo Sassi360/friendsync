@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "tsc && pnpm -w vite build",
-    "dev:up": "supabase start && doppler run -- vite",
+    "build": "tsc && pnpm vite build",
+    "dev": "supabase start && doppler run -- vite",
     "lint:prettier": "prettier -w .",
     "lint": "eslint src/. lib/. --ext .ts,.tsx --fix",
     "preview": "vite preview"
