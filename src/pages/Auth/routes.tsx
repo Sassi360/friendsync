@@ -1,4 +1,4 @@
-import { AuthLayout } from "@/components/Layouts";
+import { AuthLayout } from "@/layouts";
 import { Route } from "react-router-dom";
 import { Login } from "./login";
 import { Register } from "./register";

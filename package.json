@@ -4,32 +4,42 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build": "tsc && pnpm vite build",
-    "dev": "supabase start && doppler run -- vite",
+    "build:app": "tsc && vite build",
+    "dev": "bun supabase start && doppler run -- vite",
     "lint:prettier": "prettier -w .",
-    "lint": "eslint src/. lib/. --ext .ts,.tsx --fix",
+    "lint": "eslint src/. --ext .ts,.tsx --fix",
     "preview": "vite preview"
   },
   "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@hookform/resolvers": "^3.3.1",
+    "@radix-ui/react-checkbox": "^1.0.4",
+    "@radix-ui/react-label": "^2.0.2",
     "@radix-ui/react-slot": "^1.0.2",
+    "@radix-ui/react-toast": "^1.1.4",
     "@supabase/supabase-js": "^2.33.2",
+    "@tabler/icons-react": "^2.34.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.0.0",
+    "jotai": "^2.4.3",
+    "jotai-devtools": "^0.6.2",
     "lucide-react": "^0.274.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.46.2",
     "react-router-dom": "^6.16.0",
     "tailwind-merge": "^1.14.0",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "vest": "^5.0.5"
   },
   "devDependencies": {
-    "@types/node": "^20.5.9",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@typescript-eslint/eslint-plugin": "^6.6.0",
     "@typescript-eslint/parser": "^6.6.0",
     "@vitejs/plugin-react": "^4.0.3",
     "autoprefixer": "^10.4.15",
+    "bun-types": "^1.0.3",
     "eslint": "^8.48.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-prettier": "^5.0.0",
@@ -41,5 +51,8 @@
     "tailwindcss": "^3.3.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
-  }
+  },
+  "trustedDependencies": [
+    "supabase"
+  ]
 }
