@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "build:app": "tsc && vite build",
-    "dev": "bun supabase start && doppler run -- vite",
+    "build:app": "tsc --noEmit && vite build",
+    "dev": "bun run supabase start && doppler run -- vite",
     "lint:prettier": "prettier -w .",
     "lint": "eslint src/. --ext .ts,.tsx --fix",
     "preview": "vite preview"
@@ -47,7 +47,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "postcss": "^8.4.29",
     "prettier": "^3.0.3",
-    "supabase": "^1.93.0",
+    "supabase": "^1.100.1",
     "tailwindcss": "^3.3.3",
     "typescript": "^5.0.2",
     "vite": "^4.4.5"
