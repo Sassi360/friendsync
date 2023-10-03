@@ -43,19 +43,13 @@ export const LoginForm: FC = ({}) => {
     <Form {...methods}>
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
         <FormInput
-          control={control}
           field="email"
           label="Email"
           placeholder="example@email.com"
           type="email"
         />
 
-        <FormInput
-          control={control}
-          field="password"
-          label="Password"
-          type="password"
-        />
+        <FormInput field="password" label="Password" type="password" />
         <Button className="w-full" type="submit">
           Sign In
         </Button>
