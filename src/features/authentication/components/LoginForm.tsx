@@ -47,9 +47,14 @@ export const LoginForm: FC = ({}) => {
           label="Email"
           placeholder="example@email.com"
           type="email"
+          autoComplete="email"
         />
-
-        <FormInput field="password" label="Password" type="password" />
+        <FormInput
+          field="password"
+          label="Password"
+          type="password"
+          autoComplete="current-password"
+        />
         <Button className="w-full" type="submit">
           Sign In
         </Button>
