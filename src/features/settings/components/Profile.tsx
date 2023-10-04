@@ -30,7 +30,7 @@ export const Profile: FC = () => {
     },
   });
 
-  const { handleSubmit, control, setValue } = methods;
+  const { handleSubmit,  setValue } = methods;
 
   useEffect(() => {
     fetchUser();
@@ -64,7 +64,6 @@ export const Profile: FC = () => {
         >
           <div className="sm:col-span-3">
             <FormInput
-              control={control}
               field="firstName"
               label="First Name"
               placeholder="John"
@@ -72,7 +71,6 @@ export const Profile: FC = () => {
           </div>
           <div className="sm:col-span-3">
             <FormInput
-              control={control}
               field="lastName"
               label="Last Name"
               placeholder="Doe"
@@ -80,7 +78,6 @@ export const Profile: FC = () => {
           </div>
           <div className="sm:col-span-6">
             <FormInput
-              control={control}
               field="email"
               label="Email"
               placeholder="example@email.com"
@@ -89,7 +86,6 @@ export const Profile: FC = () => {
           </div>
           <div className="col-span-full">
             <FormInput
-              control={control}
               field="address"
               label="Address"
               placeholder="123 street ave"
@@ -97,7 +93,6 @@ export const Profile: FC = () => {
           </div>
           <div className="sm:col-span-2 sm:col-start-1">
             <FormInput
-              control={control}
               field="city"
               label="City"
               placeholder="Toronto"
@@ -105,7 +100,6 @@ export const Profile: FC = () => {
           </div>
           <div className="sm:col-span-2">
             <FormInput
-              control={control}
               field="province"
               label="Province"
               placeholder="Ontario"
@@ -113,7 +107,6 @@ export const Profile: FC = () => {
           </div>
           <div className="sm:col-span-2">
             <FormInput
-              control={control}
               field="postalCode"
               label="Postal Code"
               placeholder="XXX XXX"

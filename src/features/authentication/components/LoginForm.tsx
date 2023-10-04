@@ -25,7 +25,7 @@ export const LoginForm: FC = ({}) => {
     },
   });
 
-  const { handleSubmit, control } = methods;
+  const { handleSubmit } = methods;
 
   const onSubmit = async (login: Auth) => {
     try {
