@@ -1,6 +1,7 @@
-# Sclerocare Project
+# FriendSync
 
-An Application for Systemic Sclerosis (Scleroderma) Disease Management
+FriendSync is a versatile kit designed to make meet-ups with friends more enjoyable and organized. It combines elements of adventure, planning, and group activities to create a memorable experience that fosters strong friendships and efficient planning.
+
 
 ## Features
 
